@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    justify-content: space-between; /* Ensures even spacing between logo, nav links, and button */
+    align-items: center; /* Vertically centers all elements in the header */
+    padding: 15px 5%; /* Adjusts spacing inside the header */
+    background-color: white;
+}
+
+.logo {
+    display: block; /* Makes the logo behave like a block for alignment */
+
+    margin: 0;
+}
+
+.nav_links {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Aligns navigation items horizontally */
+    align-items: center; /* Vertically centers the navigation links */
+    gap: 20px; /* Adds spacing between navigation links */
+    margin: 0; /* Removes any default margin on the list */
+    padding-left: 18px; /* Removes any default padding on the list */
+}
+
+.nav_links li {
+    display: inline-block; /* Ensures each list item behaves as an inline-block */
+}
+
+.nav_links li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav_links li a:hover {
+    color: #0079c2; /* Changes color on hover */
+}
+
+button {
+    padding: 9px 25px;
+    background: linear-gradient(270deg, #0079c2, #00c2ff);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: linear-gradient(270deg, #00c2ff, #0079c2);
+}
